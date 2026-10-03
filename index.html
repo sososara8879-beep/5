@@ -1,0 +1,2173 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Capital Shop Full Header</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+
+        /* =========================================
+           TABLET
+        ========================================= */
+
+        @media (min-width: 768px) and (max-width: 1023px) {
+
+            header {
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+                gap: 12px !important;
+            }
+
+            header img {
+                width: 64px !important;
+                height: 64px !important;
+            }
+
+            header nav {
+                gap: 14px !important;
+                font-size: 13px !important;
+                flex-wrap: nowrap !important;
+            }
+
+            header button {
+                padding: 8px 12px !important;
+                font-size: 12px !important;
+            }
+
+
+            /* HERO */
+
+            .hero-section {
+                flex-direction: row !important;
+                gap: 20px !important;
+                padding-left: 25px !important;
+                padding-right: 25px !important;
+                padding-top: 150px !important;
+            }
+
+            .hero-section > div:first-child {
+                width: 52% !important;
+            }
+
+            .hero-section > div:last-child {
+                width: 48% !important;
+            }
+
+            .hero-title {
+                font-size: 42px !important;
+            }
+
+            .hero-description {
+                font-size: 15px !important;
+            }
+
+            .hero-feature {
+                font-size: 13px !important;
+            }
+
+            .hero-feature-icon {
+                font-size: 19px !important;
+            }
+
+            .hero-image {
+                height: 360px !important;
+            }
+
+
+            /* CATEGORIES */
+
+            .cards-section {
+                padding-left: 25px !important;
+                padding-right: 25px !important;
+            }
+
+            .cards-grid {
+                grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+                gap: 18px !important;
+            }
+
+            .category-card {
+                padding: 22px !important;
+            }
+
+
+            /* STATS */
+
+            .stats-grid {
+                grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+                gap: 12px !important;
+            }
+
+
+            /* BOOKS */
+
+            .books-section {
+                padding-left: 25px !important;
+                padding-right: 25px !important;
+            }
+
+            .books-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+                gap: 20px !important;
+            }
+
+            .book-image {
+                height: 300px !important;
+            }
+
+
+            /* CONTACT */
+
+            .contact-section {
+                padding-left: 25px !important;
+                padding-right: 25px !important;
+            }
+
+            .contact-section > div {
+                grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+            }
+        }
+
+
+        /* =========================================
+           MOBILE
+        ========================================= */
+
+        @media (max-width: 767px) {
+
+            /* ================= HEADER ================= */
+
+            header {
+                flex-direction: row !important;
+                justify-content: space-between !important;
+                align-items: center !important;
+
+                gap: 5px !important;
+
+                padding: 6px 8px !important;
+
+                min-height: 68px !important;
+            }
+
+
+            header > div:first-child {
+                gap: 5px !important;
+                flex-shrink: 0 !important;
+            }
+
+
+            header img {
+                width: 42px !important;
+                height: 42px !important;
+            }
+
+
+            header span {
+                padding: 5px 7px !important;
+                font-size: 8px !important;
+                white-space: nowrap !important;
+            }
+
+
+            header nav {
+                width: auto !important;
+
+                display: flex !important;
+                flex-wrap: nowrap !important;
+
+                justify-content: flex-start !important;
+
+                gap: 10px !important;
+
+                font-size: 9px !important;
+
+                white-space: nowrap !important;
+
+                overflow-x: auto !important;
+                overflow-y: hidden !important;
+
+                scrollbar-width: none;
+            }
+
+            header nav::-webkit-scrollbar {
+                display: none;
+            }
+
+
+            header button {
+                padding: 6px 7px !important;
+                font-size: 8px !important;
+
+                white-space: nowrap !important;
+            }
+
+
+            /* ================= HERO ================= */
+
+            .hero-section {
+
+                flex-direction: row !important;
+
+                align-items: center !important;
+
+                gap: 10px !important;
+
+                min-height: auto !important;
+
+                padding-top: 105px !important;
+                padding-bottom: 45px !important;
+
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+            }
+
+
+            .hero-section > div:first-child {
+
+                width: 55% !important;
+
+                min-width: 0 !important;
+            }
+
+
+            .hero-section > div:last-child {
+
+                width: 45% !important;
+
+                min-width: 0 !important;
+
+                margin-top: 0 !important;
+            }
+
+
+            .hero-title {
+                font-size: 25px !important;
+
+                line-height: 1.15 !important;
+            }
+
+
+            .hero-section > div:first-child > p:first-child {
+
+                font-size: 9px !important;
+
+                margin-bottom: 8px !important;
+            }
+
+
+            .hero-description {
+
+                font-size: 9px !important;
+
+                line-height: 1.5 !important;
+
+                margin-top: 10px !important;
+            }
+
+
+            /* FEATURES */
+
+            .hero-section .hero-feature {
+
+                font-size: 7px !important;
+
+                gap: 3px !important;
+            }
+
+
+            .hero-section .hero-feature-icon {
+
+                font-size: 12px !important;
+            }
+
+
+            .hero-section > div:first-child > div:nth-of-type(1) {
+
+                gap: 5px !important;
+
+                margin-top: 10px !important;
+            }
+
+
+            /* BUTTONS */
+
+            .hero-section > div:first-child > div:last-child {
+
+                flex-direction: row !important;
+
+                gap: 5px !important;
+
+                margin-top: 12px !important;
+            }
+
+
+            .hero-button {
+
+                width: auto !important;
+
+                padding: 6px 7px !important;
+
+                font-size: 7px !important;
+
+                white-space: nowrap !important;
+            }
+
+
+            /* HERO IMAGE */
+
+            .hero-image {
+
+                width: 100% !important;
+
+                height: 245px !important;
+
+                max-width: none !important;
+
+                border-radius: 18px !important;
+            }
+
+
+            .best-books {
+
+                left: 5px !important;
+
+                bottom: -12px !important;
+
+                padding: 6px 8px !important;
+
+                border-radius: 10px !important;
+            }
+
+
+            .best-books p:first-child {
+
+                font-size: 7px !important;
+            }
+
+
+            .best-books p:last-child {
+
+                font-size: 14px !important;
+            }
+
+
+            /* ================= CATEGORIES ================= */
+
+            .cards-section {
+
+                padding: 35px 8px !important;
+            }
+
+
+            .cards-grid {
+
+                grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+
+                gap: 7px !important;
+            }
+
+
+            .category-card {
+
+                padding: 10px !important;
+
+                border-radius: 15px !important;
+            }
+
+
+            .category-card-icon {
+
+                width: 38px !important;
+                height: 38px !important;
+
+                margin-bottom: 10px !important;
+
+                border-radius: 10px !important;
+            }
+
+
+            .category-card-icon i {
+
+                font-size: 18px !important;
+            }
+
+
+            .category-card h2 {
+
+                font-size: 11px !important;
+
+                line-height: 1.3 !important;
+
+                margin-bottom: 7px !important;
+            }
+
+
+            .category-card p {
+
+                font-size: 8px !important;
+
+                line-height: 1.5 !important;
+
+                margin-bottom: 10px !important;
+            }
+
+
+            .category-card .space-y-4 {
+
+                margin-top: 8px !important;
+
+                display: flex !important;
+
+                flex-direction: column !important;
+
+                gap: 6px !important;
+            }
+
+
+            .category-card .space-y-4 > div {
+
+                gap: 3px !important;
+
+                font-size: 7px !important;
+            }
+
+
+            .category-card .space-y-4 span:first-child {
+
+                width: 9px !important;
+
+                height: 9px !important;
+
+                border-width: 1px !important;
+            }
+
+
+            /* ================= STATS ================= */
+
+            .stats-section {
+
+                padding: 25px 8px !important;
+            }
+
+
+            .stats-grid {
+
+                grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+
+                gap: 5px !important;
+            }
+
+
+            .stats-grid > div > div {
+
+                font-size: 14px !important;
+
+                margin-bottom: 3px !important;
+            }
+
+
+            .stats-number {
+
+                font-size: 14px !important;
+            }
+
+
+            .stats-text {
+
+                font-size: 7px !important;
+
+                margin-top: 2px !important;
+            }
+
+
+            /* ================= BOOKS ================= */
+
+            .books-section {
+
+                padding: 35px 10px !important;
+            }
+
+
+            .books-section > div:first-child {
+
+                margin-bottom: 25px !important;
+            }
+
+
+            .books-title {
+
+                font-size: 24px !important;
+            }
+
+
+            .books-description {
+
+                font-size: 9px !important;
+
+                margin-top: 7px !important;
+            }
+
+
+            .books-grid {
+
+                grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+
+                gap: 10px !important;
+            }
+
+
+            .books-grid > div {
+
+                border-radius: 12px !important;
+            }
+
+
+            .book-image {
+
+                height: 190px !important;
+            }
+
+
+            .book-content {
+
+                padding: 10px !important;
+            }
+
+
+            .book-content p:first-child {
+
+                font-size: 8px !important;
+            }
+
+
+            .book-content h3 {
+
+                font-size: 11px !important;
+
+                line-height: 1.3 !important;
+
+                margin-top: 4px !important;
+            }
+
+
+            .book-content p {
+
+                font-size: 8px !important;
+
+                margin-top: 4px !important;
+            }
+
+
+            .book-content > div {
+
+                flex-direction: row !important;
+
+                align-items: center !important;
+
+                justify-content: space-between !important;
+
+                gap: 4px !important;
+
+                margin-top: 9px !important;
+            }
+
+
+            .book-content > div > span {
+
+                font-size: 11px !important;
+            }
+
+
+            .book-button {
+
+                padding: 5px 7px !important;
+
+                font-size: 7px !important;
+
+                white-space: nowrap !important;
+            }
+
+
+            /* ================= CONTACT ================= */
+
+            .contact-section {
+
+                min-height: auto !important;
+
+                padding: 30px 8px !important;
+            }
+
+
+            .contact-section > div {
+
+                grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+
+                gap: 8px !important;
+            }
+
+
+            .contact-box {
+
+                padding: 10px !important;
+
+                border-radius: 12px !important;
+            }
+
+
+            .contact-box h3 {
+
+                font-size: 13px !important;
+
+                margin-bottom: 8px !important;
+            }
+
+
+            .contact-box form {
+
+                display: flex !important;
+
+                flex-direction: column !important;
+
+                gap: 7px !important;
+            }
+
+
+            .contact-box form > * {
+
+                margin: 0 !important;
+            }
+
+
+            .contact-box input,
+            .contact-box textarea {
+
+                padding: 8px !important;
+
+                font-size: 8px !important;
+
+                border-radius: 8px !important;
+            }
+
+
+            .contact-box textarea {
+
+                height: 80px !important;
+            }
+
+
+            .contact-box button {
+
+                padding: 8px !important;
+
+                font-size: 8px !important;
+
+                border-radius: 8px !important;
+            }
+
+
+            .contact-right {
+
+                gap: 8px !important;
+            }
+
+
+            .contact-right > div:first-child {
+
+                padding: 10px !important;
+
+                border-radius: 12px !important;
+
+                gap: 10px !important;
+            }
+
+
+            .contact-right h3 {
+
+                font-size: 12px !important;
+
+                margin-bottom: 8px !important;
+            }
+
+
+            .contact-right .flex.items-center {
+
+                gap: 6px !important;
+            }
+
+
+            .contact-right .flex.items-center > div:first-child {
+
+                padding: 6px !important;
+            }
+
+
+            .contact-right svg {
+
+                width: 13px !important;
+
+                height: 13px !important;
+            }
+
+
+            .contact-right p {
+
+                font-size: 7px !important;
+
+                line-height: 1.4 !important;
+            }
+
+
+            .contact-banner {
+
+                min-height: 120px !important;
+
+                padding: 12px !important;
+
+                border-radius: 12px !important;
+            }
+
+
+            .contact-banner p {
+
+                font-size: 8px !important;
+            }
+
+
+            .contact-banner h3 {
+
+                font-size: 14px !important;
+
+                line-height: 1.3 !important;
+            }
+
+
+            /* ================= FOOTER ================= */
+
+            footer {
+
+                padding: 10px 8px !important;
+            }
+
+
+            footer > div {
+
+                flex-direction: row !important;
+
+                justify-content: space-between !important;
+
+                gap: 8px !important;
+            }
+
+
+            footer p {
+
+                font-size: 7px !important;
+            }
+
+
+            footer .flex {
+
+                gap: 8px !important;
+            }
+
+
+            footer svg {
+
+                width: 11px !important;
+
+                height: 11px !important;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body class="m-0 p-0 overflow-x-hidden">
+
+
+<!-- ================= HEADER ================= -->
+
+<header class="fixed top-0 left-0 z-50 w-full
+               flex flex-col lg:flex-row
+               items-center justify-between
+               gap-3 lg:gap-6
+               px-4 sm:px-6 lg:px-12
+               py-3 lg:py-0
+               min-h-20
+               bg-gradient-to-r from-[#E8DCCB] to-[#B89578]">
+
+    <div class="flex items-center gap-3 sm:gap-4 shrink-0">
+
+        <img src="imges/54.png"
+             alt="Logo"
+             class="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24
+                    object-contain rounded-full mix-blend-multiply">
+
+        <span class="px-4 sm:px-6 py-2
+                     bg-[#cbb9a4]/70
+                     text-[#4A3429]
+                     text-xs sm:text-sm
+                     font-semibold
+                     rounded-full
+                     select-none">
+            TANAGHOM
+        </span>
+
+    </div>
+
+
+    <nav class="w-full lg:w-auto
+                flex flex-wrap
+                justify-center
+                items-center
+                gap-x-4 gap-y-2
+                sm:gap-x-6
+                lg:gap-x-8
+                text-sm sm:text-base
+                text-[#4A3428]">
+
+        <a href="#" class="font-semibold hover:text-[#8B5E3C] transition">
+            Home
+        </a>
+
+        <a href="#" class="hover:text-[#8B5E3C] transition">
+            Books
+        </a>
+
+        <a href="#" class="hover:text-[#8B5E3C] transition">
+            Categories
+        </a>
+
+        <a href="#" class="hover:text-[#8B5E3C] transition">
+            Authors
+        </a>
+
+        <a href="#" class="hover:text-[#8B5E3C] transition">
+            About
+        </a>
+
+    </nav>
+
+
+    <button class="shrink-0
+                   bg-[#4A3428]
+                   text-white
+                   px-4 sm:px-5
+                   py-2
+                   text-sm sm:text-base
+                   rounded-lg
+                   hover:bg-white
+                   hover:text-black
+                   transition duration-700">
+
+        Contact Us
+
+    </button>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero-section
+                min-h-screen
+                flex flex-col lg:flex-row
+                items-center
+                gap-10 lg:gap-6
+                pt-48 sm:pt-44 lg:pt-36
+                pb-16
+                px-5 sm:px-8 lg:px-12
+                bg-white">
+
+
+    <div class="w-full lg:w-1/2
+                flex flex-col
+                justify-center
+                items-start">
+
+        <p class="text-[#8B5E3C]
+                  text-base sm:text-lg
+                  font-semibold
+                  mb-4">
+
+            WELCOME TO READORA
+
+        </p>
+
+
+        <h1 class="hero-title
+                   text-4xl
+                   sm:text-5xl
+                   lg:text-6xl
+                   font-bold
+                   text-[#3E2A20]
+                   leading-tight">
+
+            Discover Your
+            <br>
+            Next Great
+            <span class="text-[#A66A3F]">Read</span>
+
+        </h1>
+
+
+        <p class="hero-description
+                  text-[#6B5A4D]
+                  text-base sm:text-lg
+                  mt-6
+                  max-w-lg
+                  leading-relaxed">
+
+            Explore a world of stories, knowledge and imagination.
+            Find the perfect book and start your next adventure.
+
+        </p>
+
+
+        <div class="w-full
+                    flex flex-col sm:flex-row
+                    flex-wrap
+                    gap-4 sm:gap-6 lg:gap-8
+                    mt-6">
+
+            <div class="hero-feature flex items-center gap-2">
+
+                <span class="hero-feature-icon text-2xl text-[#A66A3F]">
+                    <i class="fa-solid fa-book"></i>
+                </span>
+
+                <span class="text-[#4A3428]">
+                    Large Collection
+                </span>
+
+            </div>
+            <div class="hero-feature flex items-center gap-2">
+
+                <span class="hero-feature-icon text-2xl text-[#A66A3F]">
+                    <i class="fa-solid fa-trophy"></i>
+                </span>
+
+                <span class="text-[#4A3428]">
+                    Quality Reads
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="w-full sm:w-auto
+                    flex flex-col sm:flex-row
+                    gap-4
+                    mt-8">
+
+            <a href="#"
+               class="hero-button
+                      w-full sm:w-auto
+                      text-center
+                      bg-[#4A3428]
+                      text-white
+                      px-7 py-3
+                      rounded-lg
+                      border-2 border-[#4A3428]
+                      hover:bg-white
+                      hover:text-black
+                      transition duration-500">
+
+                Explore Books
+
+            </a>
+
+
+            <a href="#"
+               class="hero-button
+                      w-full sm:w-auto
+                      text-center
+                      border-2 border-[#4A3428]
+                      text-[#4A3428]
+                      px-7 py-3
+                      rounded-lg
+                      hover:bg-[#4A3428]
+                      hover:text-white
+                      transition duration-500">
+
+                Learn More
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="w-full lg:w-1/2
+                flex justify-center
+                relative
+                mt-6 lg:mt-0">
+
+        <img src="imges/yy.jfif"
+             alt="Books"
+             class="hero-image
+                    w-full
+                    max-w-[450px]
+                    h-[280px]
+                    sm:h-[350px]
+                    md:h-[400px]
+                    lg:h-[450px]
+                    object-cover
+                    rounded-[30px]
+                    shadow-xl">
+
+
+        <div class="best-books
+                    absolute
+                    bottom-[-20px]
+                    left-4 sm:left-10 lg:left-16
+                    bg-white
+                    px-5 sm:px-6
+                    py-3 sm:py-4
+                    rounded-2xl
+                    shadow-lg">
+
+            <p class="text-xs sm:text-sm text-gray-500">
+                Best Books
+            </p>
+
+            <p class="text-xl sm:text-2xl
+                      font-bold
+                      text-[#4A3428]">
+
+                +2000
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SECTION 2 ================= -->
+
+<section class="cards-section
+                py-14 sm:py-16 lg:py-20
+                px-5 sm:px-8 lg:px-12
+                bg-white">
+
+    <div class="cards-grid
+                grid
+                grid-cols-1
+                md:grid-cols-2
+                lg:grid-cols-3
+                gap-6 sm:gap-8 lg:gap-10">
+
+
+        <div class="category-card
+                    bg-[#f8f3ec]
+                    p-6 sm:p-8 lg:p-10
+                    rounded-3xl
+                    shadow-lg
+                    hover:-translate-y-2
+                    hover:shadow-xl
+                    transition duration-500">
+
+            <div class="category-card-icon
+                        w-16 h-16
+                        bg-[#F1E6D3]
+                        rounded-2xl
+                        flex items-center justify-center
+                        mb-8">
+
+                <i class="fa-solid fa-book-open
+                          !text-4xl
+                          !text-[#5A2E24]"></i>
+
+            </div>
+
+            <h2 class="text-xl sm:text-2xl
+                       font-bold
+                       text-[#4A3428]
+                       mb-4">
+
+                Fiction Books
+
+            </h2>
+
+            <p class="text-gray-500
+                      text-base sm:text-lg
+                      mb-7
+                      leading-relaxed">
+
+                Discover amazing stories and unforgettable
+                characters that take you to another world.
+
+            </p>
+
+            <div class="space-y-4">
+
+                <div class="flex items-center gap-2">
+                    <span class="w-5 h-5 border-2 border-[#C58B5A] rounded-full shrink-0"></span>
+                    <span class="text-gray-600">Popular Stories</span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <span class="w-5 h-5 border-2 border-[#C58B5A] rounded-full shrink-0"></span>
+                    <span class="text-gray-600">New Releases</span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <span class="w-5 h-5 border-2 border-[#C58B5A] rounded-full shrink-0"></span>
+                    <span class="text-gray-600">Best Sellers</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="category-card
+                    bg-[#f8f3ec]
+                    p-6 sm:p-8 lg:p-10
+                    rounded-3xl
+                    shadow-lg
+                    hover:-translate-y-2
+                    hover:shadow-xl
+                    transition duration-500">
+
+            <div class="category-card-icon
+                        w-16 h-16
+                        bg-[#F1E6D3]
+                        rounded-2xl
+                        flex items-center justify-center
+                        mb-8">
+
+                <i class="fa-solid fa-seedling
+                          !text-4xl
+                          !text-[#5A2E24]"></i>
+
+            </div>
+
+            <h2 class="text-xl sm:text-2xl
+                       font-bold
+                       text-[#4A3428]
+                       mb-4">
+
+                Self Development
+
+            </h2>
+
+            <p class="text-gray-500
+                      text-base sm:text-lg
+                      mb-7
+                      leading-relaxed">
+
+                Learn new things, improve your habits and
+                become a better version of yourself.
+
+            </p>
+
+            <div class="space-y-4">
+
+                <div class="flex items-center gap-2">
+                    <span class="w-5 h-5 border-2 border-[#C58B5A] rounded-full shrink-0"></span>
+                    <span class="text-gray-600">Personal Growth</span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <span class="w-5 h-5 border-2 border-[#C58B5A] rounded-full shrink-0"></span>
+                    <span class="text-gray-600">Motivation</span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <span class="w-5 h-5 border-2 border-[#C58B5A] rounded-full shrink-0"></span>
+                    <span class="text-gray-600">Better Habits</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="category-card
+                    bg-[#f8f3ec]
+                    p-6 sm:p-8 lg:p-10
+                    rounded-3xl
+                    shadow-lg
+                    hover:-translate-y-2
+                    hover:shadow-xl
+                    transition duration-500">
+
+            <div class="category-card-icon
+                        w-16 h-16
+                        bg-[#F1E6D3]
+                        rounded-2xl
+                        flex items-center justify-center
+                        mb-8">
+
+                <i class="fa-solid fa-graduation-cap
+                          !text-4xl
+                          !text-[#5A2E24]"></i>
+
+            </div>
+
+            <h2 class="text-xl sm:text-2xl
+                       font-bold
+                       text-[#4A3428]
+                       mb-4">
+
+                Academic Books
+
+            </h2>
+
+            <p class="text-gray-500
+                      text-base sm:text-lg
+                      mb-7
+                      leading-relaxed">
+
+                Find useful books for learning, studying
+                and expanding your knowledge.
+
+            </p>
+
+            <div class="space-y-4">
+
+                <div class="flex items-center gap-2">
+                    <span class="w-5 h-5 border-2 border-[#C58B5A] rounded-full shrink-0"></span>
+                    <span class="text-gray-600">Study Materials</span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <span class="w-5 h-5 border-2 border-[#C58B5A] rounded-full shrink-0"></span>
+                    <span class="text-gray-600">Useful Knowledge</span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <span class="w-5 h-5 border-2 border-[#C58B5A] rounded-full shrink-0"></span>
+                    <span class="text-gray-600">Educational Books</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SECTION 3 ================= -->
+
+<section class="stats-section
+                py-12
+                px-5 sm:px-8 lg:px-12
+                bg-gradient-to-r
+                from-[#E8DCCB]
+                to-[#B89578]">
+
+    <div class="stats-grid
+                grid
+                grid-cols-2
+                md:grid-cols-4
+                gap-8
+                text-center">
+
+        <div>
+
+            <div class="text-[#5A2E24]
+                        text-2xl sm:text-3xl
+                        mb-2">
+
+                <i class="fa-solid fa-book"></i>
+
+            </div>
+
+            <h2 class="stats-number
+                       text-2xl sm:text-3xl
+                       font-bold
+                       text-[#4A3428]">
+
+                2000+
+
+            </h2>
+
+            <p class="stats-text
+                      text-sm sm:text-base
+                      text-gray-500
+                      mt-1">
+
+                Books Available
+
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <div class="text-[#5A2E24]
+                        text-2xl sm:text-3xl
+                        mb-2">
+
+                <i class="fa-solid fa-users"></i>
+
+            </div>
+
+            <h2 class="stats-number
+                       text-2xl sm:text-3xl
+                       font-bold
+                       text-[#4A3428]">
+
+                5000+
+
+            </h2>
+
+            <p class="stats-text
+                      text-sm sm:text-base
+                      text-gray-500
+                      mt-1">
+
+                Happy Readers
+
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <div class="text-[#5A2E24]
+                        text-2xl sm:text-3xl
+                        mb-2">
+
+                <i class="fa-solid fa-pen-nib"></i>
+
+            </div>
+
+            <h2 class="stats-number
+                       text-2xl sm:text-3xl
+                       font-bold
+                       text-[#4A3428]">
+
+                500+
+
+            </h2>
+
+            <p class="stats-text
+                      text-sm sm:text-base
+                      text-gray-500
+                      mt-1">
+
+                Great Authors
+
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <div class="text-[#5A2E24]
+                        text-2xl sm:text-3xl
+                        mb-2">
+
+                <i class="fa-solid fa-star"></i>
+
+            </div>
+
+            <h2 class="stats-number
+                       text-2xl sm:text-3xl
+                       font-bold
+                       text-[#4A3428]">
+
+                4.9
+
+            </h2>
+
+            <p class="stats-text
+                      text-sm sm:text-base
+                      text-gray-500
+                      mt-1">
+
+                Reader Rating
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SECTION 4 ================= -->
+
+<section class="books-section
+                py-14 sm:py-16 lg:py-20
+                px-5 sm:px-8 lg:px-12
+                bg-[#FCFAF7]">
+
+
+    <div class="text-center mb-10 sm:mb-12">
+
+        <p class="text-[#A66A3F]
+                  font-semibold
+                  text-sm sm:text-base">
+
+            OUR COLLECTION
+
+        </p>
+
+        <h2 class="books-title
+                   text-3xl sm:text-4xl
+                   font-bold
+                   text-[#4A3428]
+                   mt-2">
+
+            Featured Books
+
+        </h2>
+
+        <p class="books-description
+                  text-gray-500
+                  text-sm sm:text-base
+                  mt-4">
+
+            Discover some of our most popular books.
+
+        </p>
+
+    </div>
+
+
+    <div class="books-grid
+                grid
+                grid-cols-1
+                sm:grid-cols-2
+                lg:grid-cols-4
+                gap-6 sm:gap-8">
+
+
+        <!-- BOOK 1 -->
+
+        <div class="bg-white
+                    rounded-2xl
+                    overflow-hidden
+                    shadow-lg
+                    hover:-translate-y-2
+                    hover:shadow-xl
+                    transition duration-500">
+
+            <img src="imges/493d9127-ea96-43ec-8256-d7f9155c425e.jfif"
+                 alt="Book"
+                 class="book-image
+                        w-full
+                        h-64 sm:h-72
+                        object-cover">
+
+            <div class="book-content p-5 sm:p-6">
+
+                <p class="text-sm text-[#A66A3F]">
+                    Fiction
+                </p>
+
+                <h3 class="text-lg sm:text-xl
+                           font-bold
+                           text-[#4A3428]
+                           mt-2">
+
+                    The Silent Garden
+
+                </h3>
+
+                <p class="text-gray-500
+                          text-sm sm:text-base
+                          mt-2">
+
+                    By Emma Rose
+
+                </p>
+
+                <div class="flex flex-col sm:flex-row
+                            sm:items-center
+                            sm:justify-between
+                            gap-3
+                            mt-5">
+
+                    <span class="text-xl
+                                 font-bold
+                                 text-[#5A2E24]">
+
+                        $18.00
+
+                    </span>
+
+                    <a href="#"
+                       class="book-button
+                              text-center
+                              bg-[#5A2E24]
+                              text-white
+                              px-4 py-2
+                              rounded-full
+                              hover:bg-[#A66A3F]
+                              transition duration-500">
+
+                        View Book
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- BOOK 2 -->
+
+        <div class="bg-white
+                    rounded-2xl
+                    overflow-hidden
+                    shadow-lg
+                    hover:-translate-y-2
+                    hover:shadow-xl
+                    transition duration-500">
+
+            <img src="imges/859d00bb-54d2-4755-8d5b-dffd579815d6.jfif"
+                 alt="Book"
+                 class="book-image
+                        w-full
+                        h-64 sm:h-72
+                        object-cover">
+
+            <div class="book-content p-5 sm:p-6">
+
+                <p class="text-sm text-[#A66A3F]">
+                    Self Development
+                </p>
+
+                <h3 class="text-lg sm:text-xl
+                           font-bold
+                           text-[#4A3428]
+                           mt-2">
+
+                    Grow Every Day
+
+                </h3>
+
+                <p class="text-gray-500
+                          text-sm sm:text-base
+                          mt-2">
+
+                    By Daniel Smith
+
+                </p>
+
+                <div class="flex flex-col sm:flex-row
+                            sm:items-center
+                            sm:justify-between
+                            gap-3
+                            mt-5">
+
+                    <span class="text-xl
+                                 font-bold
+                                 text-[#5A2E24]">
+
+                        $22.00
+
+                    </span>
+
+                    <a href="#"
+                       class="book-button
+                              text-center
+                              bg-[#5A2E24]
+                              text-white
+                              px-4 py-2
+                              rounded-full
+                              hover:bg-[#A66A3F]
+                              transition duration-500">
+
+                        View Book
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- BOOK 3 -->
+
+        <div class="bg-white
+                    rounded-2xl
+                    overflow-hidden
+                    shadow-lg
+                    hover:-translate-y-2
+                    hover:shadow-xl
+                    transition duration-500">
+
+            <img src="imges/9b7fbd63-6d8b-41ae-af90-53d100720bcd.jfif"
+                 alt="Book"
+                 class="book-image
+                        w-full
+                        h-64 sm:h-72
+                        object-cover">
+
+            <div class="book-content p-5 sm:p-6">
+
+                <p class="text-sm text-[#A66A3F]">
+                    Romance
+                </p>
+
+                <h3 class="text-lg sm:text-xl
+                           font-bold
+                           text-[#4A3428]
+                           mt-2">
+
+                    Letters to You
+
+                </h3>
+
+                <p class="text-gray-500
+                          text-sm sm:text-base
+                          mt-2">
+
+                    By Olivia Brown
+
+                </p>
+
+                <div class="flex flex-col sm:flex-row
+                            sm:items-center
+                            sm:justify-between
+                            gap-3
+                            mt-5">
+
+                    <span class="text-xl
+                                 font-bold
+                                 text-[#5A2E24]">
+
+                        $20.00
+
+                    </span>
+
+                    <a href="#"
+                       class="book-button
+                              text-center
+                              bg-[#5A2E24]
+                              text-white
+                              px-4 py-2
+                              rounded-full
+                              hover:bg-[#A66A3F]
+                              transition duration-500">
+
+                        View Book
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- BOOK 4 -->
+
+        <div class="bg-white
+                    rounded-2xl
+                    overflow-hidden
+                    shadow-lg
+                    hover:-translate-y-2
+                    hover:shadow-xl
+                    transition duration-500">
+
+            <img src="imges/3dad2d57-f262-4995-a31c-efd5caf2e4da.jfif"
+                 alt="Book"
+                 class="book-image
+                        w-full
+                        h-64 sm:h-72
+                        object-cover">
+
+            <div class="book-content p-5 sm:p-6">
+
+                <p class="text-sm text-[#A66A3F]">
+                    Academic
+                </p>
+
+                <h3 class="text-lg sm:text-xl
+                           font-bold
+                           text-[#4A3428]
+                           mt-2">
+
+                    Knowledge
+
+                </h3>
+
+                <p class="text-gray-500
+                          text-sm sm:text-base
+                          mt-2">
+
+                    By James Wilson
+
+                </p>
+
+                <div class="flex flex-col sm:flex-row
+                            sm:items-center
+                            sm:justify-between
+                            gap-3
+                            mt-5">
+
+                    <span class="text-xl
+                                 font-bold
+                                 text-[#5A2E24]">
+
+                        $25.00
+
+                    </span>
+
+                    <a href="#"
+                       class="book-button
+                              text-center
+                              bg-[#5A2E24]
+                              text-white
+                              px-4 py-2
+                              rounded-full
+                              hover:bg-[#A66A3F]
+                              transition duration-500">
+
+                        View Book
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact-section
+                bg-[#1a0c07]
+                text-[#e3d7cd]
+                py-10 md:py-12
+                px-4 sm:px-6 md:px-8
+                font-sans
+                min-h-screen
+                flex items-center justify-center">
+
+    <div class="max-w-6xl
+                w-full
+                mx-auto
+                grid grid-cols-1 md:grid-cols-2
+                gap-6 sm:gap-8
+                items-stretch">
+
+
+        <!-- Form -->
+
+        <div class="contact-box
+                    bg-black
+                    p-5 sm:p-6 md:p-8
+                    rounded-2xl
+                    flex flex-col
+                    justify-between">
+
+            <h3 class="text-xl font-bold text-white mb-2">
+                Contact us
+            </h3>
+
+
+            <form class="space-y-5 sm:space-y-6">
+
+                <input type="text"
+                       placeholder="Full Name"
+                       class="w-full
+                              bg-[#110805]
+                              border border-[#3b1f13]
+                              rounded-xl
+                              px-4 py-3.5
+                              text-sm
+                              text-[#e3d7cd]
+                              placeholder-[#7d6051]
+                              focus:outline-none
+                              focus:border-[#a85934]
+                              transition">
+
+
+                <input type="email"
+                       placeholder="Email Address"
+                       class="w-full
+                              bg-[#110805]
+                              border border-[#3b1f13]
+                              rounded-xl
+                              px-4 py-3.5
+                              text-sm
+                              text-[#e3d7cd]
+                              placeholder-[#7d6051]
+                              focus:outline-none
+                              focus:border-[#a85934]
+                              transition">
+
+
+                <textarea rows="5"
+                          placeholder="Your Message..."
+                          class="w-full
+                                 bg-[#110805]
+                                 border border-[#3b1f13]
+                                 rounded-xl
+                                 px-4 py-3.5
+                                 text-sm
+                                 text-[#e3d7cd]
+                                 placeholder-[#7d6051]
+                                 focus:outline-none
+                                 focus:border-[#a85934]
+                                 transition
+                                 resize-none"></textarea>
+
+
+                <button type="submit"
+                        class="w-full
+                               bg-[#9e4c27]
+                               hover:bg-[#853e1e]
+                               text-white
+                               font-medium
+                               py-3.5 px-6
+                               rounded-xl
+                               transition
+                               flex items-center
+                               justify-center
+                               gap-2
+                               shadow-md">
+
+                    <span>Send Message</span>
+
+                    <svg class="w-4 h-4"
+                         fill="none"
+                         stroke="currentColor"
+                         viewBox="0 0 24 24">
+
+                        <path stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8">
+                        </path>
+
+                    </svg>
+
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <!-- Right -->
+
+        <div class="contact-right flex flex-col gap-6">
+
+
+            <div class="bg-[#30160c]
+                        p-5 sm:p-6 md:p-8
+                        rounded-3xl
+                        space-y-5">
+
+                <h3 class="text-xl
+                           font-bold
+                           text-white
+                           mb-2">
+
+                    Contact Information
+
+                </h3>
+
+
+                <div class="flex items-center gap-4">
+
+                    <div class="bg-[#8f411f]
+                                p-2.5
+                                rounded-lg
+                                text-white
+                                shrink-0">
+
+                        <svg class="w-5 h-5"
+                             fill="currentColor"
+                             viewBox="0 0 24 24">
+
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+
+                        </svg>
+
+                    </div>
+
+                    <div class="min-w-0">
+
+                        <p class="text-xs text-[#a88a7b]">
+                            Address
+                        </p>
+
+                        <p class="text-sm
+                                  font-medium
+                                  text-white
+                                  break-words">
+
+                            Central Library, London, UK
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="flex items-center gap-4">
+
+                    <div class="bg-[#8f411f]
+                                p-2.5
+                                rounded-lg
+                                text-white
+                                shrink-0">
+
+                        <svg class="w-5 h-5"
+                             fill="currentColor"
+                             viewBox="0 0 24 24">
+
+                            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+
+                        </svg>
+
+                    </div>
+
+                    <div class="min-w-0">
+
+                        <p class="text-xs text-[#a88a7b]">
+                            Phone
+                        </p>
+
+                        <p class="text-sm
+                                  font-medium
+                                  text-white
+                                  break-words">
+
+                            +44 20 7946 0912
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="flex items-center gap-4">
+
+                    <div class="bg-[#8f411f]
+                                p-2.5
+                                rounded-lg
+                                text-white
+                                shrink-0">
+
+                        <svg class="w-5 h-5"
+                             fill="currentColor"
+                             viewBox="0 0 24 24">
+
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+
+                        </svg>
+
+                    </div>
+
+                    <div class="min-w-0">
+
+                        <p class="text-xs text-[#a88a7b]">
+                            Email
+                        </p>
+
+                        <p class="text-sm
+                                  font-medium
+                                  text-white
+                                  break-all">
+
+                            contact@bookclub.com
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-banner
+                        bg-gradient-to-r
+                        from-[#8f411f]
+                        via-[#bd6c43]
+                        to-[#e09b70]
+                        p-7 sm:p-10
+                        rounded-3xl
+                        text-center
+                        flex flex-col
+                        items-center
+                        justify-center
+                        min-h-[190px]">
+
+                <p class="text-sm
+                          text-[#f5e2d5]
+                          font-light">
+
+                    Let's explore
+
+                </p>
+
+                <h3 class="text-2xl sm:text-3xl
+                           font-serif
+                           font-bold
+                           text-white
+                           mt-1">
+
+                    Great Books Together
+
+                </h3>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="bg-gradient-to-r
+               from-[#8f411f]
+               via-[#bd6c43]
+               to-[#e09b70]
+               text-[#1a0c07]
+               py-4
+               px-5 sm:px-8
+               font-sans
+               border-t
+               border-[#3b1f13]/10">
+
+    <div class="max-w-6xl
+                mx-auto
+                flex flex-col sm:flex-row
+                items-center
+                justify-between
+                gap-4">
+
+        <p class="text-xs sm:text-sm
+                  font-medium
+                  tracking-wide
+                  text-center">
+
+            © 2026 All Rights Reserved.
+
+        </p>
+
+
+        <div class="flex items-center gap-4
+                    text-[#1a0c07]">
+
+            <a href="#"
+               class="p-1 hover:text-[#8f411f]
+                      hover:scale-110
+                      transition duration-200"
+               aria-label="Facebook">
+
+                <svg class="w-4 h-4 fill-current"
+                     viewBox="0 0 24 24">
+
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+
+            </a>
+
+
+            <a href="#"
+               class="p-1 hover:text-[#8f411f]
+                      hover:scale-110
+                      transition duration-200"
+               aria-label="Twitter">
+
+                <svg class="w-4 h-4 fill-current"
+                     viewBox="0 0 24 24">
+
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+
+            </a>
+
+
+            <a href="#"
+               class="p-1 hover:text-[#8f411f]
+                      hover:scale-110
+                      transition duration-200"
+               aria-label="LinkedIn">
+
+                <svg class="w-4 h-4 fill-current"
+                     viewBox="0 0 24 24">
+
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+
+            </a>
+
+
+            <a href="#"
+               class="p-1 hover:text-[#8f411f]
+                      hover:scale-110
+                      transition duration-200"
+               aria-label="Instagram">
+
+                <svg class="w-4 h-4 fill-current"
+                     viewBox="0 0 24 24">
+
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.014-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.28-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>
